@@ -3,6 +3,10 @@ Build HPC Easily.
 
 copy + paste + press Enter ---> cluster ready
 
+Online manual, 
+- 🔗[English Version](https://hpc4you.github.io)
+- 🔗[Chinese Version](https://gitee.com/hpc4you/hpc), please check the PDF file. 
+
 ## Quick Start
 1. Run `bash <(curl -k -Ss https://raw.githubusercontent.com/hpc4you/hpc/main/getInfo.sh)`, follow the on-screen prompts to send the Email.
 2. Add IP and hostname entries into file **/etc/hosts**. 
