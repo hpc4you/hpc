@@ -4,7 +4,7 @@ Build HPC Easily.
 copy + paste + press Enter ---> cluster ready
 
 ## Quick Start
-1. Run `bash <(curl -k -Ss https://gitee.com/hpc4you/hpc/raw/master/getInfo.sh)`, follow the on-screen prompts to send the Email.
+1. Run `bash <(curl -k -Ss https://raw.githubusercontent.com/hpc4you/hpc/main/getInfo.sh)`, follow the on-screen prompts to send the Email.
 2. Add IP and hostname entries into file **/etc/hosts**. 
 3. Upload file **code** and package **hpc4you_toolkit-XXX.tgz**.
 4. Login as root, run `source code`, then follow the on-screen prompts. You may need to copy + paste the green line then press Enter.
