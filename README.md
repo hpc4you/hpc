@@ -22,5 +22,5 @@ Wait patiently, all servers will reboot at least twice, and then the cluster wil
 4. Deploy SLURM by only run `source code`, demonstration of **hpc4you_toolkit solo** 🔗[BV1Gg411R7tt](https://www.bilibili.com/video/BV1Gg411R7tt)
 
 ## Linux Distribution Supported
-1. RHEL7 and RHEL8 and their compatible operating systems, such as CentOS 7.x, 8.x, RockyLinux 8.x.
+1. RHEL7, RHEL8, RHEL9, and their compatible operating systems, such as CentOS 7.x, 8.x, RockyLinux 8.x, AlmaLinux 9.x. 
 2. Ubuntu 20.04/22.04 and their compatible operating systems. 
