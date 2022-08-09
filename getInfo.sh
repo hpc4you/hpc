@@ -50,8 +50,8 @@ echo ""
 echo -e "Disk Info:"
 dashLine
 
-for disk in `lsblk | grep ^sd | awk '{print $1}'`; do echo -e "DiskID:\t`lsblk --nodeps -no serial /dev/$disk`"; done
-for disk in `lsblk | grep ^nvme | awk '{print $1}'`; do echo -e "DiskID:\t`lsblk --nodeps -no serial /dev/$disk`"; done
+for disk in `lsblk | grep ^sd | awk '{print $1}'`; do echo -e "DiskID:\t`lsblk --nodeps -no serial /dev/$disk`"; done | sort | uniq
+for disk in `lsblk | grep ^nvme | awk '{print $1}'`; do echo -e "DiskID:\t`lsblk --nodeps -no serial /dev/$disk`"; done | sort | uniq
 dashLine
 }
 
