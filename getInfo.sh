@@ -51,6 +51,22 @@ echo ""
 echo -e "Disk Info:"
 dashLine
 
+if ! command -v lsblk &> /dev/null
+then
+    if [[ -f /etc/redhat-release ]]; then
+        echo "lsblk not found. Installing on RHEL..."
+        yum install util-linux -y
+    elif [[ -f /etc/lsb-release ]]; then
+        echo "lsblk not found. Installing on Ubuntu..."
+        apt-get update
+        apt-get install util-linux -y
+    else
+        echo "Unknown distribution. Cannot install lsblk."
+        echo "Please install lsblk manually and try again."
+        exit 1
+    fi
+fi
+
 for disk in `lsblk | grep ^sd | awk '{print $1}'`; do echo -e "DiskID:\t`lsblk --nodeps -no serial /dev/$disk`"; done | sort | uniq
 for disk in `lsblk | grep ^nvme | awk '{print $1}'`; do echo -e "DiskID:\t`lsblk --nodeps -no serial /dev/$disk`"; done | sort | uniq
 dashLine
