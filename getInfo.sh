@@ -5,6 +5,7 @@
 
 clear
 export myMail="ask@hpc4you.top"
+export weChatID="hpc4you"
 export currentTime=$(date "+%Y%m%d-%H%M")
 
 # Colors
